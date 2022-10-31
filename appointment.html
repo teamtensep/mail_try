@@ -224,6 +224,7 @@
                       <input
                         type="text"
                         name="date"
+                        id="date_"
                         class="form-control bg-white border-0 datetimepicker-input"
                         placeholder="Date"
                         data-target="#date"
@@ -237,6 +238,7 @@
                       <input
                         type="text"
                         name="time"
+                        id="time_"
                         class="form-control bg-white border-0 datetimepicker-input"
                         placeholder="Time"
                         data-target="#time"
@@ -433,8 +435,8 @@
           doctor: document.getElementById("doctor").value,
           name: document.getElementById("name").value,
           email: document.getElementById("emailaddress").value,
-          date: document.getElementById("date").value,
-          time: document.getElementById("time").value,
+          date: document.getElementById("date_").value,
+          time: document.getElementById("time_").value,
         };
 
         const serviceID = "service_ckh4chg";
@@ -447,8 +449,8 @@
             document.getElementById("doctor").value = "";
             document.getElementById("name").value = "";
             document.getElementById("emailaddress").value = "";
-            document.getElementById("date").value = "";
-            document.getElementById("time").value = "";
+            document.getElementById("date_").value = "";
+            document.getElementById("time_").value = "";
             console.log(res);
             alert("Successfull");
           })
