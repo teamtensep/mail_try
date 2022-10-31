@@ -1,12 +1,12 @@
 <?php
 //get data from form 
 
-$selectDepartment = $_POST['department'];
-$selectDoctor = $_POST['doctor']
-$name = $_POST['name'];
-$email= $_POST['emailaddress'];
-$date= $_POST['date'];
-$time= $_POST['time'];
+$selectDepartment = $_REQUEST['department'];
+$selectDoctor = $_REQUEST['doctor']
+$name = $_REQUEST['name'];
+$email= $_REQUEST['emailaddress'];
+$date= $_REQUEST['date'];
+$time= $_REQUEST['time'];
 $to = "teamtensep@gmail.com";
 $subject = "Mail From website";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Date =" . $date, "\r\n Deparment =" . $selectDepartment, "\r\n Doctor =" . $selectDoctor;
